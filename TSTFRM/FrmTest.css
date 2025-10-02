@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+h1{
+    text-align: center;
+}
+#Formss{
+    background-color: whitesmoke;
+
+    width:8cm;
+    height:5cm;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 0.2cm;
+}
+.TEXTbx{
+    float: right;
+}
+.rnbwtxt{    
+    background-image: linear-gradient(-90deg,red,green,blue,yellow,red,green,blue,yellow,red,green,blue,yellow,red,green,blue,yellow,red);
+    background-size: 400%;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    animation: slides 10s linear infinite;
+}
+.rnbwbck{    
+    background-image: linear-gradient(90deg,red,green,blue,yellow,red,green,blue,yellow,red,green,blue,yellow,red,green,blue,yellow,red);
+    background-size: 500%;    
+
+    animation: slides 15s linear infinite;
+}
+
+@keyframes slides{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+
+}
+#button1{
+    
+    width:100%;
+}
